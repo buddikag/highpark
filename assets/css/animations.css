@@ -1,0 +1,35 @@
+/* Default: bottom to top */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Left to right */
+.reveal-left {
+  transform: translateX(-50px);
+}
+
+/* Right to left */
+.reveal-right {
+  transform: translateX(50px);
+}
+
+/* Visible */
+.reveal.show,
+.reveal-left.show,
+.reveal-right.show {
+  opacity: 1;
+  transform: translate(0);
+}
+
+/* stagger delays */
+.reveal.delay-1 {
+  transition-delay: 0.2s;
+}
+.reveal.delay-2 {
+  transition-delay: 0.4s;
+}
+.reveal.delay-3 {
+  transition-delay: 0.6s;
+}

@@ -1,0 +1,154 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #01111fb2;
+  color: white;
+  z-index: 50;
+  padding-block: 25px;
+  transition: padding 0.35s ease, background-color 0.35s ease;
+}
+
+.header.scrolled {
+  padding-block: 10px;
+  background-color: #01111fe6;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  transition: all 0.35s ease;
+}
+
+.header-heading {
+  font-size: 52px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  transition: font-size 0.35s ease;
+}
+
+.header-subtext {
+  font-size: 16px;
+  font-weight: 300;
+  text-align: right;
+  margin-bottom: 0;
+  padding-right: 5px;
+  transition: font-size 0.35s ease;
+}
+
+.header.scrolled .header-heading {
+  font-size: 34px;
+}
+
+.header.scrolled .header-subtext {
+  font-size: 13px;
+}
+
+.nav {
+  display: flex;
+}
+
+.header-items {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  font-weight: 300;
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+.header-items li {
+  cursor: pointer;
+}
+
+.header-items li a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.menu-toggle img {
+  width: 28px;
+  height: 28px;
+  filter: invert(1);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.menu-toggle i {
+  font-size: 32px;
+}
+
+.close-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.menu-toggle.active .menu-icon {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.menu-toggle.active .close-icon {
+  opacity: 1;
+  transform: scale(1);
+}
+
+@media (max-width: 992px) {
+  .header-heading {
+    font-size: 32px;
+  }
+
+  .header.scrolled .header-heading {
+    font-size: 28px;
+  }
+
+  .header-subtext {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .header-content {
+    justify-content: space-between;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #01111f;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+
+  .nav.active {
+    max-height: 450px;
+  }
+
+  .header-items {
+    flex-direction: column;
+    padding-block: 50px;
+    font-size: 20px;
+  }
+
+  .header-items li {
+    padding: 10px 0;
+    width: fit-content;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+}
