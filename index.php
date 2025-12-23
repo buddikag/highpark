@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <?php include 'includes/head.php'; ?>
+
+    <title>High Park Hotel</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <?php include 'includes/header.php'; ?>
+
+    <!-- Hero Section -->
+    <section class="container-fluid p-0 position-relative">
+        <img src="assets/images/logo.png" alt="Logo" class="hero-logo">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/images/hero-1.jpg" class="img-fluid w-100 object-fit-cover slider-image">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/hero-2.jpg" class="img-fluid w-100 object-fit-cover slider-image">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/hero-3.jpg" class="img-fluid w-100 object-fit-cover slider-image">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Banner Section -->
+    <section class="container-fluid p-0 reveal">
+        <div class="row g-0">
+            <div class="col-12 col-md-7 py-4 d-flex align-items-center justify-content-center banner-bg">
+                <div class="row g-0">
+                    <div class="col-12 col-md-4 p-0 d-flex align-items-center justify-content-center">
+                        <img src="assets/images/offer.png" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-8 p-0 d-flex align-items-center justify-content-center text-center text-md-start">
+                        <h1 class="display-5 fw-bold text-white m-0 ps-3">Book 6 Nights and <br class="d-block d-md-none d-lg-block">Get 1 Night Free</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-5 d-flex align-items-center justify-content-center p-4 p-lg-5 banner-cta">
+                <h1 class="text-center text-md-start text-white"><span class="fw-light">Book now before it’s too late! Contact Kurupa at</span><br><strong>+94 777 514 979</strong></h1>
+            </div>
+    </section>
+
+    <!-- Why Stay Section -->
+    <section class="container px-4">
+        <h1 class="heading reveal">Why Stay at <span class="blue-text">High Park Hotel</span></h1>
+        <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4 order-1 reveal delay-1">
+                <h2 class="sub-heading2">Direct Beach Access</h2>
+                <div>
+                    <img src="assets/images/card-1.jpg" class="img-fluid w-100">
+                    <p class="feature-card-text">High Park Hotel offers direct beach access with a wide, open beachfront just steps from your room. Wake to ocean views, stroll straight onto soft sands, and enjoy uninterrupted sea breezes. Perfect for sunset walks, morning swims, and a truly relaxing seaside escape.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-4 order-2 order-md-3 order-lg-2 reveal delay-2">
+                <h2 class="sub-heading2">Relaxing Outdoor Garden</h2>
+                <div>
+                    <img src="assets/images/card-2.jpg" class="img-fluid w-100">
+                    <p class="feature-card-text">High Park Hotel features a spacious, beautifully landscaped garden designed for relaxation and leisure. Enjoy peaceful walks, open green spaces, and fresh air throughout the day. The garden offers the perfect setting for unwinding, outdoor dining, and quiet moments surrounded by nature.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 order-3 order-md-2 order-lg-3 reveal delay-3">
+                <h2 class="sub-heading2">Healing Spa Therapies</h2>
+                <div>
+                    <img src="assets/images/card-3.png" class="img-fluid w-100">
+                    <p class="feature-card-text">Experience complete relaxation with our in-house Healing Spa Therapies at High Park Hotel. Rejuvenate your body and mind with carefully curated treatments designed to restore balance, relieve stress, and enhance well-being, all within the comfort and privacy of the hotel.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Room Categories Section -->
+    <section class="container-fluid p-0">
+        <h1 class="heading px-4 px-md-0 reveal">A <span class="blue-text">Room</span> for Every Stay</h1>
+        <h2 class="sub-heading1 reveal">six room categories</h2>
+        <p class="text-center w-75 mx-auto mb-5 reveal">High Park Hotel features six room categories designed to suit every guest. Choose spacious Duplex Rooms, elegant Suite Rooms, relaxing Cabana Rooms, or comfortable Standard Rooms with AC or non-AC options. For a true coastal escape, our Beach Rooms offer direct access to the sea. Whether you seek luxury, comfort, or simplicity, High Park Hotel has the perfect room for your ideal stay.</p>
+        <div class="row g-0 reveal">
+            <div class="col-12 col-md-6"><img src="assets/images/room-1.jpg" class="img-fluid w-100 object-fit-cover"></div>
+            <div class="col-12 col-md-6"><img src="assets/images/room-2.jpg" class="img-fluid w-100 object-fit-cover"></div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="container-fluid reveal">
+        <h1 class="heading px-4 px-md-0">Book Your Stay and Indulge in <span class="blue-text">Total Relaxation</span> Today.</h1>
+        <h2 class="sub-heading1 mb-5">Contact +94 777 514 979</h2>
+        <div></div>
+    </section>
+
+    <section class="container-fluid p-0 position-relative reveal">
+        <img src="assets/images/testimonials-1.jpg" class="img-fluid w-100 object-fit-cover" style="height: 60vh;">
+        <div class="position-absolute bottom-0 start-0 w-100 text-white py-4 testimonial-banner">
+            <h1 class="heading px-2 mt-0 mb-0">What Our Guest Says</h1>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="container mt-5 mb-4 mb-md-5">
+        <div class="row g-3 g-md-5 px-4 px-md-0">
+            <div class="col-12 col-md-4 reveal delay-1">
+                <h5 class="text-decoration-underline">Melanie Krawina</h5>
+                <p>We can highly recommend the High Park Hotel! First and foremost, the staff was OUTSTANDING. Super helpful, very friendly .. for example, i had a sore throat and they made me some ayurvedic medicine for all the days and nights</p>
+            </div>
+            <div class="col-12 col-md-4 reveal delay-2">
+                <h5 class="text-decoration-underline">Nafreez Mohamed</h5>
+                <p>The High Park Hotel is a great place to stay. I really enjoyed my stay here. The hotel was clean and beautiful. The rooms were spacious and comfortable. </p>
+            </div>
+            <div class="col-12 col-md-4 reveal delay-3">
+                <h5 class="text-decoration-underline">1nilsp</h5>
+                <p>we stayed here for 5 days and it was Amazing, i really dont understand all of these bad reviews, the rooms were amazing and pretty big with direct access to the great pool.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="container d-flex flex-column align-items-center mb-5 pb-4 reveal">
+        <h1 class="extra-heading px-2 px-md-0">Secure your stay today and relax in style and comfort.</h1>
+        <a href="" class="btn-booking">Check for Availability and Book </a>
+    </section>
+
+    <!-- Footer -->
+    <?php include 'includes/footer.php'; ?>
+
+    <!-- Move to Top Button -->
+    <button id="moveToTop" class="btn">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+</body>
+
+</html>
