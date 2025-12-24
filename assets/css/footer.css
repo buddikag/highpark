@@ -16,13 +16,13 @@
 }
 
 .footer-content h5 {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .social-links i {
-  font-size: 28px;
+  font-size: 1.75rem;
   color: white;
   transition: 0.3s;
 }
