@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #1875d3;
+  --primary-color:#03b4c7;
 }
 
 * {
@@ -65,14 +65,14 @@
 }
 
 .feature-card-text {
-  background-color: rgb(224, 224, 224);
+  background-color: rgb(13 202 240 / 5%);
   padding: 30px;
   height: 250px;
   margin: 0;
 }
 
 .testimonial-banner {
-  background-color: #053f72b2;
+  background-color: #5ad7f1b2;
 }
 
 @media (max-width: 992px) {

@@ -85,10 +85,10 @@
     </section>
 
     <!-- Room Categories Section -->
-    <section class="container-fluid p-0">
+    <section class="container p-0">
         <h1 class="heading px-4 px-md-0 reveal">A <span class="blue-text">Room</span> for Every Stay</h1>
         <h2 class="sub-heading1 reveal">six room categories</h2>
-        <p class="text-center w-75 mx-auto mb-5 reveal">High Park Hotel features six room categories designed to suit every guest. Choose spacious Duplex Rooms, elegant Suite Rooms, relaxing Cabana Rooms, or comfortable Standard Rooms with AC or non-AC options. For a true coastal escape, our Beach Rooms offer direct access to the sea. Whether you seek luxury, comfort, or simplicity, High Park Hotel has the perfect room for your ideal stay.</p>
+        <p class="text-center w-75 mx-auto mb-5 reveal" style="margin-bottom: 100px;">High Park Hotel features six room categories designed to suit every guest. Choose spacious Duplex Rooms, elegant Suite Rooms, relaxing Cabana Rooms, or comfortable Standard Rooms with AC or non-AC options. For a true coastal escape, our Beach Rooms offer direct access to the sea. Whether you seek luxury, comfort, or simplicity, High Park Hotel has the perfect room for your ideal stay.</p>
         <div class="row g-0 reveal">
             <div class="col-12 col-md-6"><img src="assets/images/room-1.jpg" class="img-fluid w-100 object-fit-cover"></div>
             <div class="col-12 col-md-6"><img src="assets/images/room-2.jpg" class="img-fluid w-100 object-fit-cover"></div>
