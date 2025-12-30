@@ -2,10 +2,7 @@
   background-color: #032e59;
   color: white;
   padding-block: 80px;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
+  width: 100%; 
 }
 
 .footer-content {

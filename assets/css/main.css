@@ -8,6 +8,21 @@
   margin: 0;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1; /* pushes footer to bottom */
+}
+
 .heading {
   font-size: 4rem;
   font-weight: bold;
@@ -63,11 +78,18 @@
   background-color: var(--primary-color);
 }
 
-.feature-card-text {
+.feature-card img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.feature-card p {
   background-color: rgb(13 202 240 / 5%);
   padding: 30px;
   height: 250px;
   margin: 0;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
 
 .testimonial-banner {
