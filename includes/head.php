@@ -4,11 +4,11 @@
 
 <!-- Stylesheets -->
 <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="assets/css/main.css?v=2">
-<link rel="stylesheet" href="assets/css/header.css?v=2">
-<link rel="stylesheet" href="assets/css/footer.css?v=2">
-<link rel="stylesheet" href="assets/css/components.css?v=2">
-<link rel="stylesheet" href="assets/css/animations.css?v=2">
+<link rel="stylesheet" href="assets/css/main.css?v=3">
+<link rel="stylesheet" href="assets/css/header.css?v=3">
+<link rel="stylesheet" href="assets/css/footer.css?v=3">
+<link rel="stylesheet" href="assets/css/components.css?v=3">
+<link rel="stylesheet" href="assets/css/animations.css?v=3">
 
 <!-- Scripts -->
 <script src="assets/bootstrap/js/bootstrap.bundle.min.js" defer></script>
