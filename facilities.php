@@ -116,15 +116,6 @@
                             <p class="facility-description">Spacious family rooms perfect for traveling with children.</p>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 reveal delay-3">
-                        <div class="facility-card">
-                            <div class="facility-icon">
-                                <i class="bi bi-bell-fill"></i>
-                            </div>
-                            <h3 class="facility-title">Room Service</h3>
-                            <p class="facility-description">24-hour room service available for your convenience.</p>
-                        </div>
-                    </div>
                     <div class="col-12 col-md-6 col-lg-4 reveal delay-1">
                         <div class="facility-card">
                             <div class="facility-icon">
