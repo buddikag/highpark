@@ -8,7 +8,7 @@
             <div>
                 <h5>Call Us</h5>
                 <ul class="list-unstyled mb-0">
-                    <li>Hotline : +94 777 204 519</li>
+                    <li>Hotline : <a href="tel:+94777204519" class="text-decoration-none">+94 777 204 519</a></li>
                     <li>Telephone : +94 262 232 466</li>
                     <li>
                         <i class="bi bi-whatsapp" style="color:#25D366;"></i>
@@ -16,7 +16,7 @@
                     </li>
                     <li>
                         <i class="bi bi-whatsapp" style="color:#25D366;"></i>
-                        &nbsp;:&nbsp;+94 777 204 519
+                        &nbsp;:&nbsp;<a href="tel:+94777204519" class="text-decoration-none">+94 777 204 519</a>
                     </li>
                 </ul>
             </div>

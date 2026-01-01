@@ -20,7 +20,9 @@
         <li><a href="rooms.php">Rooms</a></li>
         <li><a href="spa.php">SPA</a></li>
         <li><a href="restaurant.php">Restaurant</a></li>
+        <li><a href="facilities.php">Facilities</a></li>
         <li><a href="gallery.php">Gallery</a></li>
+        <li><a href="contact.php">Contact</a></li>
       </ul>
     </nav>
 
