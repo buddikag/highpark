@@ -139,11 +139,14 @@
             <!-- Room Categories Section -->
             <section class="container p-0 section_container">
                 <h1 class="heading px-4 px-md-0 reveal">Beachfront <span class="blue-text">Rooms</span> in Nilaveli</h1>
-                <h2 class="sub-heading1 reveal">six room categories with ocean views</h2>
-                <p class="text-center w-75 mx-auto mt-4 mb-5 reveal">High Park Hotel in Nilaveli features six distinct room categories designed to suit every guest, all just steps from the beach. Choose spacious Duplex Rooms with ocean views, elegant Suite Rooms overlooking the Indian Ocean, relaxing Cabana Rooms, or comfortable Standard Rooms with AC or non-AC options. For a true coastal escape, our Beach Rooms offer direct access to Nilaveli Beach. Whether you seek luxury, comfort, or simplicity, High Park Hotel has the perfect beachfront room for your ideal stay in Trincomalee.</p>
+                <h2 class="sub-heading1 reveal">five room types with ocean views</h2>
+                <p class="text-center w-75 mx-auto mt-4 mb-5 reveal">High Park Hotel in Nilaveli features five distinct room types designed to suit every guest, all just steps from the beach. Choose spacious Duplex Rooms with ocean views, elegant Suite Rooms overlooking the Indian Ocean, relaxing Cabana Rooms, comfortable Standard Rooms, or premium Beach Rooms with direct access to Nilaveli Beach. Whether you seek luxury, comfort, or simplicity, High Park Hotel has the perfect beachfront room for your ideal stay in Trincomalee.</p>
                 <div class="row g-0 reveal">
                     <div class="col-12 col-md-6"><img src="assets/images/room-1.jpg" class="img-fluid w-100 object-fit-cover" alt="Beachfront rooms Nilaveli - High Park Hotel ocean view rooms"></div>
                     <div class="col-12 col-md-6"><img src="assets/images/room-2.jpg" class="img-fluid w-100 object-fit-cover" alt="Nilaveli hotel rooms - High Park Hotel beachfront accommodation"></div>
+                </div>
+                <div class="text-center mt-4 mb-4 reveal">
+                    <a href="rooms.php" class="btn-booking">View All Room Types</a>
                 </div>
             </section>
 

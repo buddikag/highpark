@@ -237,6 +237,119 @@ html, body {
   }
 }
 
+/* Room Category Slider Styles - Mobile First */
+.room-category-section {
+  margin-bottom: 60px;
+}
+
+.room-slider-wrapper {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background: white;
+}
+
+.room-slider-wrapper .carousel {
+  width: 100%;
+}
+
+.room-slider-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.room-category-description {
+  padding: 0 15px;
+}
+
+.room-category-description p {
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Carousel Controls Styling */
+.room-slider-wrapper .carousel-control-prev,
+.room-slider-wrapper .carousel-control-next {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(3, 180, 199, 0.8);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.8;
+  transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.room-slider-wrapper .carousel-control-prev {
+  left: 10px;
+}
+
+.room-slider-wrapper .carousel-control-next {
+  right: 10px;
+}
+
+.room-slider-wrapper .carousel-control-prev:hover,
+.room-slider-wrapper .carousel-control-next:hover {
+  opacity: 1;
+  background-color: var(--primary-color);
+}
+
+.room-slider-wrapper .carousel-control-prev-icon,
+.room-slider-wrapper .carousel-control-next-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Tablet and Desktop Styles */
+@media (min-width: 768px) {
+  .room-slider-image {
+    height: 400px;
+  }
+
+  .room-slider-wrapper .carousel-control-prev,
+  .room-slider-wrapper .carousel-control-next {
+    width: 50px;
+    height: 50px;
+  }
+
+  .room-slider-wrapper .carousel-control-prev {
+    left: 20px;
+  }
+
+  .room-slider-wrapper .carousel-control-next {
+    right: 20px;
+  }
+
+  .room-slider-wrapper .carousel-control-prev-icon,
+  .room-slider-wrapper .carousel-control-next-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .room-category-description {
+    padding: 0 30px;
+  }
+
+  .room-category-description p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .room-slider-image {
+    height: 500px;
+  }
+
+  .room-category-section {
+    margin-bottom: 80px;
+  }
+}
+
 /* Gallery Styles */
 .gallery-grid {
   display: grid;
@@ -670,4 +783,178 @@ html, body {
   .amenity-list-card {
     padding: 20px;
   }
+}
+
+/* Menu Category Styles */
+.menu-category {
+  margin-bottom: 80px;
+}
+
+.menu-subcategory {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #e18e23;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgba(3, 180, 199, 0.2);
+}
+
+@media (max-width: 768px) {
+  .menu-subcategory {
+    font-size: 1.5rem;
+  }
+}
+
+/* Restaurant Menu Item Styles */
+.menu-item-badge {
+  font-size: 0.85rem;
+  color: var(--primary-color);
+  font-weight: 500;
+  white-space: nowrap;
+  padding: 4px 12px;
+  background-color: rgba(3, 180, 199, 0.1);
+  border-radius: 20px;
+  display: inline-block;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.menu-item-description {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Update treatment-header for restaurant cards to allow wrapping */
+.treatment-card .treatment-header {
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.treatment-card .treatment-header .treatment-name {
+  flex: 1;
+  min-width: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Ensure treatment-card content doesn't overflow */
+.treatment-card {
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+/* Menu Navigation Styles */
+.menu-navigation {
+  padding: 30px 20px;
+  background-color: rgba(3, 180, 199, 0.05);
+  border-radius: 12px;
+  margin: 40px auto;
+  max-width: 1200px;
+}
+
+.menu-nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 10px;
+  background: white;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  height: 100%;
+  min-height: 100px;
+  border: 2px solid transparent;
+}
+
+.menu-nav-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(3, 180, 199, 0.2);
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.menu-nav-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, var(--primary-color), #5ad7f1);
+  color: white;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+.menu-nav-item:hover .menu-nav-number {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(3, 180, 199, 0.4);
+}
+
+.menu-nav-text {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.3;
+  transition: color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .menu-item-badge {
+    font-size: 0.75rem;
+    padding: 3px 10px;
+  }
+
+  .menu-item-description {
+    font-size: 0.85rem;
+  }
+
+  .menu-navigation {
+    padding: 20px 15px;
+    margin: 30px auto;
+  }
+
+  .menu-nav-item {
+    padding: 12px 8px;
+    min-height: 90px;
+  }
+
+  .menu-nav-number {
+    width: 35px;
+    height: 35px;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+  }
+
+  .menu-nav-text {
+    font-size: 0.8rem;
+  }
+}
+
+/* Smooth scroll behavior for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add offset for fixed header when scrolling */
+.menu-category {
+  scroll-margin-top: 100px;
 }

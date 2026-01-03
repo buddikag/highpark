@@ -34,128 +34,205 @@
             <!-- Introduction Section -->
             <section class="container px-4 section_container" style="padding-top: 80px;">
                 <h1 class="heading reveal">Something for <span class="blue-text">Everyone</span></h1>
-                <p class="text-center w-75 mx-auto mt-4 mb-5 reveal">At High Park Hotel, we believe every guest deserves the perfect accommodation. Our six distinct room types are thoughtfully designed to cater to different preferences, group sizes, and budgets. From cozy standard rooms to luxurious sea-view suites, find your ideal beachfront escape.</p>
+                <p class="text-center w-75 mx-auto mt-4 mb-5 reveal">At High Park Hotel, we believe every guest deserves the perfect accommodation. Our five distinct room categories are thoughtfully designed to cater to different preferences, group sizes, and budgets. From cozy standard rooms to luxurious suites and beachfront cabanas, find your ideal beachfront escape.</p>
             </section>
 
-            <!-- Rooms Grid Section -->
+            <!-- Rooms Section -->
             <section class="container px-4 section_container">
-                <div class="row g-4 g-lg-5">
-
-                    <!-- Room 1: Deluxe Chalet -->
-                    <div class="col-12 col-md-6 col-lg-6 reveal delay-1">
-                        <div class="room-card">
-                            <div class="room-image-wrapper">
-                                <img src="assets/images/room-1.jpg" class="img-fluid w-100 room-image" alt="Deluxe Chalet">
-                                <div class="room-overlay">
-                                    <h3 class="room-title">Deluxe Chalet</h3>
+                
+                <!-- Standard Rooms -->
+                <div class="room-category-section mb-5 reveal">
+                    <h2 class="sub-heading1 mb-4">Standard <span class="blue-text">Rooms</span></h2>
+                    <div class="room-slider-wrapper">
+                        <div id="standardCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="assets/images/16.jpg" class="d-block w-100 room-slider-image" alt="Standard Room 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/17.jpg" class="d-block w-100 room-slider-image" alt="Standard Room 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/18.jpg" class="d-block w-100 room-slider-image" alt="Standard Room 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/19.jpg" class="d-block w-100 room-slider-image" alt="Standard Room 4">
                                 </div>
                             </div>
-                            <div class="room-details">
-                                <div class="room-beds mb-3">
-                                    <i class="bi bi-bed-fill me-2"></i>
-                                    <span>1 Twin Bed & 1 King Bed</span>
-                                </div>
-                                <p class="room-description">Spacious chalet-style accommodation perfect for families or groups. Features comfortable twin and king bed configuration with modern amenities and a relaxing atmosphere.</p>
-                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#standardCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#standardCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
                     </div>
-
-                    <!-- Room 2: Cabana -->
-                    <div class="col-12 col-md-6 col-lg-6 reveal delay-2">
-                        <div class="room-card">
-                            <div class="room-image-wrapper">
-                                <img src="assets/images/01.jpg" class="img-fluid w-100 room-image" alt="Cabana">
-                                <div class="room-overlay">
-                                    <h3 class="room-title">Cabana</h3>
-                                </div>
-                            </div>
-                            <div class="room-details">
-                                <div class="room-beds mb-3">
-                                    <i class="bi bi-bed-fill me-2"></i>
-                                    <span>1 King Bed</span>
-                                </div>
-                                <p class="room-description">Relax in our charming cabana rooms, offering a cozy retreat with a comfortable king bed. Perfect for couples seeking a romantic beachfront getaway.</p>
-                            </div>
-                        </div>
+                    <div class="room-category-description mt-4">
+                        <p class="text-center">Comfortable and well-appointed standard rooms with modern amenities. Perfect for couples or solo travelers seeking quality accommodation at great value.</p>
                     </div>
-
-                    <!-- Room 3: Standard Double Room -->
-                    <div class="col-12 col-md-6 col-lg-6 reveal delay-3">
-                        <div class="room-card">
-                            <div class="room-image-wrapper">
-                                <img src="assets/images/room-2.jpg" class="img-fluid w-100 room-image" alt="Standard Double Room">
-                                <div class="room-overlay">
-                                    <h3 class="room-title">Standard Double Room</h3>
-                                </div>
-                            </div>
-                            <div class="room-details">
-                                <div class="room-beds mb-3">
-                                    <i class="bi bi-bed-fill me-2"></i>
-                                    <span>1 King Bed</span>
-                                </div>
-                                <p class="room-description">Comfortable and well-appointed standard double room with air conditioning. Ideal for couples or solo travelers looking for quality accommodation at great value.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Room 4: Standard Double Room with Fan -->
-                    <div class="col-12 col-md-6 col-lg-6 reveal delay-1">
-                        <div class="room-card">
-                            <div class="room-image-wrapper">
-                                <img src="assets/images/02.jpg" class="img-fluid w-100 room-image" alt="Standard Double Room with Fan">
-                                <div class="room-overlay">
-                                    <h3 class="room-title">Standard Double Room with Fan</h3>
-                                </div>
-                            </div>
-                            <div class="room-details">
-                                <div class="room-beds mb-3">
-                                    <i class="bi bi-bed-fill me-2"></i>
-                                    <span>1 King Bed</span>
-                                </div>
-                                <p class="room-description">Eco-friendly option with ceiling fan and natural ventilation. Enjoy the tropical breeze while staying comfortable in this budget-friendly room with king bed.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Room 5: Superior Double Room -->
-                    <div class="col-12 col-md-6 col-lg-6 reveal delay-2">
-                        <div class="room-card">
-                            <div class="room-image-wrapper">
-                                <img src="assets/images/03.jpg" class="img-fluid w-100 room-image" alt="Superior Double Room">
-                                <div class="room-overlay">
-                                    <h3 class="room-title">Superior Double Room</h3>
-                                </div>
-                            </div>
-                            <div class="room-details">
-                                <div class="room-beds mb-3">
-                                    <i class="bi bi-bed-fill me-2"></i>
-                                    <span>1 Twin Bed & 1 King Bed</span>
-                                </div>
-                                <p class="room-description">Upgraded accommodation with additional space and enhanced amenities. Features both twin and king beds, perfect for families or friends traveling together.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Room 6: Deluxe Double Room with Sea View -->
-                    <div class="col-12 col-md-6 col-lg-6 reveal delay-3">
-                        <div class="room-card">
-                            <div class="room-image-wrapper">
-                                <img src="assets/images/04.jpg" class="img-fluid w-100 room-image" alt="Deluxe Double Room with Sea View">
-                                <div class="room-overlay">
-                                    <h3 class="room-title">Deluxe Double Room with Sea View</h3>
-                                </div>
-                            </div>
-                            <div class="room-details">
-                                <div class="room-beds mb-3">
-                                    <i class="bi bi-bed-fill me-2"></i>
-                                    <span>1 Queen Bed</span>
-                                </div>
-                                <p class="room-description">Premium beachfront accommodation with stunning ocean views. Wake up to the sound of waves and enjoy breathtaking sunsets from your room with a comfortable queen bed.</p>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
+
+                <!-- Duplex Rooms -->
+                <div class="room-category-section mb-5 reveal">
+                    <h2 class="sub-heading1 mb-4">Duplex <span class="blue-text">Rooms</span></h2>
+                    <div class="room-slider-wrapper">
+                        <div id="duplexCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                               
+                                <div class="carousel-item active">
+                                    <img src="assets/images/22.jpg" class="d-block w-100 room-slider-image" alt="Duplex Room 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/24.jpg" class="d-block w-100 room-slider-image" alt="Duplex Room 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/25.jpg" class="d-block w-100 room-slider-image" alt="Duplex Room 4">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/26.jpg" class="d-block w-100 room-slider-image" alt="Duplex Room 5">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/27.jpg" class="d-block w-100 room-slider-image" alt="Duplex Room 6">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/47.jpg" class="d-block w-100 room-slider-image" alt="Duplex Room 7">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/48.jpg" class="d-block w-100 room-slider-image" alt="Duplex Room 8">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#duplexCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#duplexCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="room-category-description mt-4">
+                        <p class="text-center">Spacious two-level accommodations perfect for families or groups. Features comfortable living spaces with modern amenities and enhanced privacy.</p>
+                    </div>
+                </div>
+
+                <!-- Beach Rooms -->
+                <div class="room-category-section mb-5 reveal">
+                    <h2 class="sub-heading1 mb-4">Beach <span class="blue-text">Rooms</span></h2>
+                    <div class="room-slider-wrapper">
+                        <div id="beachCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="assets/images/44.jpg" class="d-block w-100 room-slider-image" alt="Beach Room 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/46.jpg" class="d-block w-100 room-slider-image" alt="Beach Room 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/49.jpg" class="d-block w-100 room-slider-image" alt="Beach Room 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#beachCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#beachCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="room-category-description mt-4">
+                        <p class="text-center">Premium beachfront accommodation with stunning ocean views. Wake up to the sound of waves and enjoy breathtaking sunsets from your room.</p>
+                    </div>
+                </div>
+
+                <!-- Suite Rooms -->
+                <div class="room-category-section mb-5 reveal">
+                    <h2 class="sub-heading1 mb-4">Suite <span class="blue-text">Rooms</span></h2>
+                    <div class="room-slider-wrapper">
+                        <div id="suiteCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="assets/images/15.jpg" class="d-block w-100 room-slider-image" alt="Suite Room 1">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="assets/images/50.jpg" class="d-block w-100 room-slider-image" alt="Suite Room 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/51.jpg" class="d-block w-100 room-slider-image" alt="Suite Room 4">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/52.jpg" class="d-block w-100 room-slider-image" alt="Suite Room 5">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/45.jpg" class="d-block w-100 room-slider-image" alt="Suite Room 6">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/53.jpg" class="d-block w-100 room-slider-image" alt="Suite Room 7">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/54.jpg" class="d-block w-100 room-slider-image" alt="Suite Room 8">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/55.jpg" class="d-block w-100 room-slider-image" alt="Suite Room 9">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/56.jpg" class="d-block w-100 room-slider-image" alt="Suite Room 10">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#suiteCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#suiteCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="room-category-description mt-4">
+                        <p class="text-center">Luxurious suite accommodations with premium amenities and spacious layouts. Perfect for those seeking the ultimate comfort and elegance during their stay.</p>
+                    </div>
+                </div>
+
+                <!-- Cabana -->
+                <div class="room-category-section mb-5 reveal">
+                    <h2 class="sub-heading1 mb-4">Cabana</h2>
+                    <div class="room-slider-wrapper">
+                        <div id="cabanaCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="assets/images/58.jpg" class="d-block w-100 room-slider-image" alt="Cabana 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/59.jpg" class="d-block w-100 room-slider-image" alt="Cabana 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/60.jpg" class="d-block w-100 room-slider-image" alt="Cabana 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/61.jpg" class="d-block w-100 room-slider-image" alt="Cabana 4">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#cabanaCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#cabanaCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="room-category-description mt-4">
+                        <p class="text-center">Relax in our charming cabana rooms, offering a cozy retreat with comfortable accommodations. Perfect for couples seeking a romantic beachfront getaway.</p>
+                    </div>
+                </div>
+
             </section>
 
             <!-- Call to Action Section -->
