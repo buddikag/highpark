@@ -3,8 +3,10 @@
 
     <!-- Branding -->
     <div class="branding">
-      <h1 class="header-heading">High Park Hotel</h1>
-      <h2 class="header-subtext">Nilaveli Beach, Sri Lanka</h2>
+      <a href="index.php" class="branding-link">
+        <img src="assets/images/logo-2.png" alt="High Park Hotel Logo" class="header-logo">
+      </a>
+      <h2 class="header-subtext" style="display:none;">Nilaveli Beach, Sri Lanka</h2>
     </div>
 
     <!-- Menu Toggle -->
@@ -22,6 +24,7 @@
         <li><a href="restaurant.php">Restaurant</a></li>
         <li><a href="facilities.php">Facilities</a></li>
         <li><a href="gallery.php">Gallery</a></li>
+        <li><a href="reservation.php">Reservation</a></li>
         <li><a href="contact.php">Contact</a></li>
       </ul>
     </nav>

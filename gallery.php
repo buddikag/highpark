@@ -4,7 +4,17 @@
 <head>
     <?php include 'includes/head.php'; ?>
 
-    <title>High Park Hotel | Gallery</title>
+    <title>Photo Gallery | High Park Hotel - Nilaveli Beach, Trincomalee</title>
+    <meta name="description" content="Explore High Park Hotel's photo gallery showcasing our beachfront location, rooms, spa, restaurant, and facilities in Nilaveli, Trincomalee.">
+    <meta name="keywords" content="High Park Hotel gallery, Nilaveli hotel photos, beachfront hotel images, Trincomalee hotel pictures">
+    <link rel="canonical" href="https://highparkhotel.com/gallery.php">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://highparkhotel.com/gallery.php">
+    <meta property="og:title" content="Photo Gallery | High Park Hotel - Nilaveli Beach, Trincomalee">
+    <meta property="og:description" content="Explore High Park Hotel's photo gallery showcasing our beachfront location in Nilaveli.">
+    <meta property="og:image" content="https://highparkhotel.com/assets/images/hero-2.jpg">
 </head>
 
 <body>
@@ -17,7 +27,6 @@
 
             <!-- Hero Section -->
             <section class="container-fluid p-0 position-relative">
-                <img src="assets/images/logo.png" alt="Logo" class="hero-logo">
                 <div class="position-relative">
                     <img src="assets/images/hero-mobile-2.jpg"
                         class="w-100 d-block d-md-none object-fit-cover slider-image"

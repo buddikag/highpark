@@ -7,6 +7,14 @@
     <title>Hotel Facilities & Amenities in Nilaveli | High Park Hotel</title>
     <meta name="description" content="Discover all the facilities and amenities at High Park Hotel in Nilaveli. From beachfront access to spa, restaurant, free WiFi, parking, and more.">
     <meta name="keywords" content="Nilaveli hotel facilities, High Park Hotel amenities, beachfront hotel Trincomalee, hotel services Sri Lanka">
+    <link rel="canonical" href="https://highparkhotel.com/facilities.php">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://highparkhotel.com/facilities.php">
+    <meta property="og:title" content="Hotel Facilities & Amenities in Nilaveli | High Park Hotel">
+    <meta property="og:description" content="Discover all the facilities and amenities at High Park Hotel in Nilaveli.">
+    <meta property="og:image" content="https://highparkhotel.com/assets/images/hero-1.jpg">
 </head>
 
 <body>
@@ -19,7 +27,6 @@
 
             <!-- Hero Section -->
             <section class="container-fluid p-0 position-relative">
-                <img src="assets/images/logo.png" alt="Logo" class="hero-logo">
                 <div class="position-relative">
                     <img src="assets/images/hero-mobile-1.jpg"
                         class="w-100 d-block d-md-none object-fit-cover slider-image"

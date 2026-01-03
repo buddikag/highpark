@@ -7,6 +7,41 @@
     <title>Beachfront Spa & Ayurveda Treatments in Nilaveli | High Park Hotel</title>
     <meta name="description" content="Experience premium Ayurvedic spa treatments at High Park Hotel's beachfront spa in Nilaveli, Trincomalee. Traditional massages, herbal therapies, and holistic wellness by the ocean.">
     <meta name="keywords" content="Nilaveli spa, beachfront spa Trincomalee, Ayurveda treatments Nilaveli, massage therapy Nilaveli, spa services Sri Lanka, High Park Hotel spa">
+    <link rel="canonical" href="https://highparkhotel.com/spa.php">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://highparkhotel.com/spa.php">
+    <meta property="og:title" content="Beachfront Spa & Ayurveda Treatments in Nilaveli | High Park Hotel">
+    <meta property="og:description" content="Experience premium Ayurvedic spa treatments at High Park Hotel's beachfront spa in Nilaveli, Trincomalee.">
+    <meta property="og:image" content="https://highparkhotel.com/assets/images/spa-hero.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Beachfront Spa & Ayurveda Treatments in Nilaveli | High Park Hotel">
+    <meta name="twitter:description" content="Experience premium Ayurvedic spa treatments at High Park Hotel's beachfront spa.">
+    <meta name="twitter:image" content="https://highparkhotel.com/assets/images/spa-hero.jpg">
+    
+    <!-- Structured Data - Spa -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Spa",
+      "name": "High Park Hotel Spa",
+      "description": "Beachfront Ayurvedic spa offering traditional massages and holistic wellness treatments in Nilaveli, Trincomalee.",
+      "url": "https://highparkhotel.com/spa.php",
+      "image": "https://highparkhotel.com/assets/images/spa-hero.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Nilaveli-01",
+        "addressLocality": "Trincomalee",
+        "addressCountry": "LK"
+      },
+      "telephone": "+94777204519",
+      "priceRange": "$$",
+      "openingHours": "Mo-Su 09:00-20:00"
+    }
+    </script>
 </head>
 
 <body>
@@ -19,7 +54,6 @@
 
             <!-- Hero Section -->
             <section class="container-fluid p-0 position-relative">
-                <img src="assets/images/logo.png" alt="Logo" class="hero-logo">
                 <div class="position-relative">
                     <img src="assets/images/spa-hero.jpg"
                         class="w-100 d-block d-md-none object-fit-cover slider-image"

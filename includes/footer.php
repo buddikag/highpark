@@ -20,6 +20,17 @@
                     </li>
                 </ul>
             </div>
+            <div>
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled mb-0">
+                    <li><a href="index.php" class="text-decoration-none">Home</a></li>
+                    <li><a href="rooms.php" class="text-decoration-none">Rooms</a></li>
+                    <li><a href="reservation.php" class="text-decoration-none">Reservation</a></li>
+                    <li><a href="spa.php" class="text-decoration-none">SPA</a></li>
+                    <li><a href="restaurant.php" class="text-decoration-none">Restaurant</a></li>
+                    <li><a href="contact.php" class="text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
             <div class="social-links">
                 <h5>Follow Us</h5>
                 <div class="icons d-flex gap-3">

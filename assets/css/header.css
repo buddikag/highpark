@@ -17,12 +17,39 @@
 .header-content {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 50px;
   transition: all 0.35s ease;
+  position: relative;
+}
+
+.branding {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.branding-link {
+  display: inline-block;
+  line-height: 0;
+}
+
+.header-logo {
+  height: auto;
+  width: 250px;
+  /* max-width: 200px; */
+  object-fit: contain;
+  transition: height 0.35s ease;
+}
+
+.header.scrolled .header-logo {
+  height: 45px;
 }
 
 .header-heading {
-  font-size: 3.25rem;
+  font-size: 3.0rem;
   font-weight: 300;
   text-transform: uppercase;
   margin-bottom: 0;
@@ -30,12 +57,14 @@
 }
 
 .header-subtext {
-  font-size: 1rem;
+  font-size: 0.7rem;
   font-weight: 300;
   text-align: right;
   margin-bottom: 0;
   padding-right: 5px;
   transition: font-size 0.35s ease;
+  padding-left: 20px;
+  color: #ccc;
 }
 
 .header.scrolled .header-heading {
@@ -43,11 +72,17 @@
 }
 
 .header.scrolled .header-subtext {
-  font-size: 0.813rem;
+  font-size: 0.6rem;
 }
 
 .nav {
   display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  z-index: 1;
 }
 
 .header-items {
@@ -55,8 +90,10 @@
   gap: 20px;
   list-style: none;
   font-weight: 300;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 0;
+  padding: 0;
+  justify-content: center;
 }
 
 .header-items li {
@@ -104,17 +141,19 @@
 }
 
 @media (max-width: 992px) {
-  .header-heading {
-    font-size: 2rem;
+  .header-logo {
+    height: 50px;
+    max-width: 180px;
   }
 
-  .header.scrolled .header-heading {
-    font-size: 1.75rem;
+  .header.scrolled .header-logo {
+    height: 40px;
+    max-width: 150px;
   }
 
   .header-subtext {
-    font-size: 0.875rem;
-    text-align: left;
+    font-size: 0.7rem;
+    text-align: center;
   }
 
   .header-content {
@@ -130,6 +169,7 @@
     top: 100%;
     left: 0;
     width: 100%;
+    transform: none;
     background-color: #01111f;
     max-height: 0;
     overflow: hidden;

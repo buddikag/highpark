@@ -8,14 +8,125 @@
     <meta name="description" content="Experience the ultimate beachfront escape at High Park Hotel in Nilaveli, Trincomalee. Direct beach access, ocean-view rooms, Ayurvedic spa, and authentic Sri Lankan hospitality on pristine Nilaveli Beach.">
     <meta name="keywords" content="beachfront hotel Nilaveli, Nilaveli hotel, Trincomalee beach hotel, beachfront accommodation Nilaveli, High Park Hotel, Nilaveli Beach hotel, Sri Lanka beachfront hotel, ocean view hotel Nilaveli">
     <meta name="author" content="High Park Hotel">
+    <link rel="canonical" href="https://highparkhotel.com/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://highparkhotel.com/">
     <meta property="og:title" content="Beachfront Hotel in Nilaveli, Trincomalee | High Park Hotel">
     <meta property="og:description" content="Experience the ultimate beachfront escape at High Park Hotel in Nilaveli, Trincomalee. Direct beach access, ocean-view rooms, and authentic Sri Lankan hospitality.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://highparkhotel.com">
+    <meta property="og:image" content="https://highparkhotel.com/assets/images/hero-1.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="High Park Hotel">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://highparkhotel.com/">
+    <meta name="twitter:title" content="Beachfront Hotel in Nilaveli, Trincomalee | High Park Hotel">
+    <meta name="twitter:description" content="Experience the ultimate beachfront escape at High Park Hotel in Nilaveli, Trincomalee.">
+    <meta name="twitter:image" content="https://highparkhotel.com/assets/images/hero-1.jpg">
+    
+    <!-- Geo Tags -->
     <meta name="geo.region" content="LK-5">
     <meta name="geo.placename" content="Nilaveli, Trincomalee">
     <meta name="geo.position" content="8.5678;81.2345">
     <meta name="ICBM" content="8.5678, 81.2345">
+    
+    <!-- Structured Data - Hotel -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Hotel",
+      "name": "High Park Hotel",
+      "image": "https://highparkhotel.com/assets/images/hero-1.jpg",
+      "description": "Beachfront hotel in Nilaveli, Trincomalee with direct beach access, ocean-view rooms, Ayurvedic spa, and authentic Sri Lankan hospitality.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Nilaveli-01",
+        "addressLocality": "Trincomalee",
+        "addressRegion": "Eastern Province",
+        "addressCountry": "LK",
+        "postalCode": "31010"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "8.5678",
+        "longitude": "81.2345"
+      },
+      "telephone": "+94777204519",
+      "priceRange": "$$",
+      "starRating": {
+        "@type": "Rating",
+        "ratingValue": "4"
+      },
+      "amenityFeature": [
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Beachfront Access",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Spa",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Restaurant",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Free WiFi",
+          "value": true
+        }
+      ],
+      "numberOfRooms": "5",
+      "checkinTime": "14:00",
+      "checkoutTime": "11:00"
+    }
+    </script>
+    
+    <!-- Structured Data - LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LodgingBusiness",
+      "name": "High Park Hotel",
+      "image": "https://highparkhotel.com/assets/images/hero-1.jpg",
+      "url": "https://highparkhotel.com",
+      "telephone": "+94777204519",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Nilaveli-01",
+        "addressLocality": "Trincomalee",
+        "addressRegion": "Eastern Province",
+        "addressCountry": "LK"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "8.5678",
+        "longitude": "81.2345"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "priceRange": "$$"
+    }
+    </script>
 </head>
 
 <body>
@@ -28,8 +139,6 @@
 
             <!-- Hero Section -->
             <section class="container-fluid p-0 position-relative">
-                <img src="assets/images/logo.png" alt="Logo" class="hero-logo">
-
                 <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <div class="carousel-inner">
 

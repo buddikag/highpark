@@ -1,6 +1,15 @@
 <!-- Meta Tags -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="googlebot" content="index, follow">
+<meta name="language" content="English">
+<meta name="revisit-after" content="7 days">
+<meta name="rating" content="general">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="assets/images/logo.png">
+<link rel="apple-touch-icon" href="assets/images/logo.png">
 
 <!-- Stylesheets -->
 <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">

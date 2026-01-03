@@ -7,6 +7,42 @@
     <title>Beachfront Restaurant & Dining in Nilaveli | High Park Hotel</title>
     <meta name="description" content="Experience exceptional dining at High Park Hotel's beachfront restaurant in Nilaveli, Trincomalee. Fresh seafood, local cuisine, and international dishes with stunning ocean views.">
     <meta name="keywords" content="Nilaveli restaurant, beachfront dining Trincomalee, restaurant Nilaveli, seafood restaurant Sri Lanka, High Park Hotel restaurant">
+    <link rel="canonical" href="https://highparkhotel.com/restaurant.php">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://highparkhotel.com/restaurant.php">
+    <meta property="og:title" content="Beachfront Restaurant & Dining in Nilaveli | High Park Hotel">
+    <meta property="og:description" content="Experience exceptional dining at High Park Hotel's beachfront restaurant in Nilaveli, Trincomalee.">
+    <meta property="og:image" content="https://highparkhotel.com/assets/images/restaurant-hero.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Beachfront Restaurant & Dining in Nilaveli | High Park Hotel">
+    <meta name="twitter:description" content="Experience exceptional dining at High Park Hotel's beachfront restaurant.">
+    <meta name="twitter:image" content="https://highparkhotel.com/assets/images/restaurant-hero.jpg">
+    
+    <!-- Structured Data - Restaurant -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "High Park Hotel Restaurant",
+      "description": "Beachfront restaurant offering fresh seafood, traditional Sri Lankan cuisine, and international dishes in Nilaveli, Trincomalee.",
+      "url": "https://highparkhotel.com/restaurant.php",
+      "image": "https://highparkhotel.com/assets/images/restaurant-hero.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Nilaveli-01",
+        "addressLocality": "Trincomalee",
+        "addressCountry": "LK"
+      },
+      "telephone": "+94777204519",
+      "priceRange": "$$",
+      "servesCuisine": ["Sri Lankan", "Seafood", "International"],
+      "openingHours": "Mo-Su 07:00-22:00"
+    }
+    </script>
 </head>
 
 <body>
@@ -19,7 +55,6 @@
 
             <!-- Hero Section -->
             <section class="container-fluid p-0 position-relative">
-                <img src="assets/images/logo.png" alt="Logo" class="hero-logo">
                 <div class="position-relative">
                     <img src="assets/images/restaurant-hero.jpg"
                         class="w-100 d-block d-md-none object-fit-cover slider-image"

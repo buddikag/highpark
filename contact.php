@@ -7,6 +7,14 @@
     <title>Contact Us | High Park Hotel - Nilaveli Beach, Trincomalee</title>
     <meta name="description" content="Contact High Park Hotel in Nilaveli Beach, Trincomalee. Get in touch for bookings, inquiries, or visit us at our beachfront location. Find us on Google Maps.">
     <meta name="keywords" content="contact High Park Hotel, Nilaveli hotel contact, Trincomalee hotel booking, High Park Hotel address, hotel phone number">
+    <link rel="canonical" href="https://highparkhotel.com/contact.php">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://highparkhotel.com/contact.php">
+    <meta property="og:title" content="Contact Us | High Park Hotel - Nilaveli Beach, Trincomalee">
+    <meta property="og:description" content="Contact High Park Hotel in Nilaveli Beach, Trincomalee for bookings and inquiries.">
+    <meta property="og:image" content="https://highparkhotel.com/assets/images/hero-1.jpg">
 </head>
 
 <body>
@@ -19,7 +27,6 @@
 
             <!-- Hero Section -->
             <section class="container-fluid p-0 position-relative">
-                <img src="assets/images/logo.png" alt="Logo" class="hero-logo">
                 <div class="position-relative">
                     <img src="assets/images/hero-mobile-1.jpg"
                         class="w-100 d-block d-md-none object-fit-cover slider-image"
