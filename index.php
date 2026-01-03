@@ -98,12 +98,12 @@
                                 <img src="assets/images/offer.png" class="img-fluid" alt="Special offer High Park Hotel Nilaveli beachfront hotel">
                             </div>
                             <div class="col-12 col-md-8 p-0 d-flex align-items-center justify-content-center text-center text-md-start">
-                                <h1 class="display-5 fw-bold text-white m-0 ps-3">Book 6 Nights at Nilaveli Beach <br class="d-block d-md-none d-lg-block">Get 1 Night Free</h1>
+                                <h1 class="display-5 fw-bold text-white m-0 ps-3 offer-text-shadow">Book 6 Nights at Nilaveli Beach <span style="color: #FFD700;">Get 1 Night Free</span></h1>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-5 d-flex align-items-center justify-content-center p-4 p-lg-5 banner-cta">
-                        <h1 class="text-center text-md-start text-white"><span class="fw-light">Book your beachfront stay now! Contact Kurupa at</span><br><a href="tel:+94777204519" class="text-white text-decoration-none"><strong>+94 777 204 519</strong></a></h1>
+                        <h1 class="text-center text-md-start text-white"><span class="fw-light">Book your beachfront stay now! Contact High Park Hotel at</span><br><a href="tel:+94777204519" class="text-white text-decoration-none"><strong>+94 777 204 519</strong></a></h1>
                     </div>
             </section>
 
