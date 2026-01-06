@@ -18,6 +18,10 @@
                         <i class="bi bi-whatsapp" style="color:#25D366;"></i>
                         &nbsp;:&nbsp;<a href="tel:+94777204519" class="text-decoration-none">+94 777 204 519</a>
                     </li>
+                    <li>
+                        <i class="bi bi-envelope-fill"></i>
+                        &nbsp;:&nbsp;<a href="mailto:info@highparkhotel.com" class="text-decoration-none">info@highparkhotel.com</a>
+                    </li>
                 </ul>
             </div>
             <div>
@@ -26,8 +30,9 @@
                     <li><a href="index.php" class="text-decoration-none">Home</a></li>
                     <li><a href="rooms.php" class="text-decoration-none">Rooms</a></li>
                     <li><a href="reservation.php" class="text-decoration-none">Reservation</a></li>
-                    <li><a href="spa.php" class="text-decoration-none">SPA</a></li>
+                    <li><a href="wellness-center.php" class="text-decoration-none">Wellness Center</a></li>
                     <li><a href="restaurant.php" class="text-decoration-none">Restaurant</a></li>
+                    <li><a href="banquet.php" class="text-decoration-none">Banquet</a></li>
                     <li><a href="contact.php" class="text-decoration-none">Contact</a></li>
                 </ul>
             </div>

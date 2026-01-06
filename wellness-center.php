@@ -4,32 +4,32 @@
 <head>
     <?php include 'includes/head.php'; ?>
 
-    <title>Beachfront Spa & Ayurveda Treatments in Nilaveli | High Park Hotel</title>
-    <meta name="description" content="Experience premium Ayurvedic spa treatments at High Park Hotel's beachfront spa in Nilaveli, Trincomalee. Traditional massages, herbal therapies, and holistic wellness by the ocean.">
-    <meta name="keywords" content="Nilaveli spa, beachfront spa Trincomalee, Ayurveda treatments Nilaveli, massage therapy Nilaveli, spa services Sri Lanka, High Park Hotel spa">
-    <link rel="canonical" href="https://highparkhotel.com/spa.php">
+    <title>Beachfront Wellness Center & Ayurveda Treatments in Nilaveli | High Park Hotel</title>
+    <meta name="description" content="Experience premium Ayurvedic Wellness Center treatments at High Park Hotel's beachfront Wellness Center in Nilaveli, Trincomalee. Traditional massages, herbal therapies, and holistic wellness by the ocean.">
+    <meta name="keywords" content="Nilaveli Wellness Center, beachfront Wellness Center Trincomalee, Ayurveda treatments Nilaveli, massage therapy Nilaveli, Wellness Center services Sri Lanka, High Park Hotel Wellness Center">
+    <link rel="canonical" href="https://highparkhotel.com/wellness-center.php">
     
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://highparkhotel.com/spa.php">
-    <meta property="og:title" content="Beachfront Spa & Ayurveda Treatments in Nilaveli | High Park Hotel">
-    <meta property="og:description" content="Experience premium Ayurvedic spa treatments at High Park Hotel's beachfront spa in Nilaveli, Trincomalee.">
+    <meta property="og:url" content="https://highparkhotel.com/wellness-center.php">
+    <meta property="og:title" content="Beachfront Wellness Center & Ayurveda Treatments in Nilaveli | High Park Hotel">
+    <meta property="og:description" content="Experience premium Ayurvedic Wellness Center treatments at High Park Hotel's beachfront Wellness Center in Nilaveli, Trincomalee.">
     <meta property="og:image" content="https://highparkhotel.com/assets/images/spa-hero.jpg">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Beachfront Spa & Ayurveda Treatments in Nilaveli | High Park Hotel">
-    <meta name="twitter:description" content="Experience premium Ayurvedic spa treatments at High Park Hotel's beachfront spa.">
+    <meta name="twitter:title" content="Beachfront Wellness Center & Ayurveda Treatments in Nilaveli | High Park Hotel">
+    <meta name="twitter:description" content="Experience premium Ayurvedic Wellness Center treatments at High Park Hotel's beachfront Wellness Center.">
     <meta name="twitter:image" content="https://highparkhotel.com/assets/images/spa-hero.jpg">
     
-    <!-- Structured Data - Spa -->
+    <!-- Structured Data - Wellness Center -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Spa",
-      "name": "High Park Hotel Spa",
-      "description": "Beachfront Ayurvedic spa offering traditional massages and holistic wellness treatments in Nilaveli, Trincomalee.",
-      "url": "https://highparkhotel.com/spa.php",
+      "name": "High Park Hotel Wellness Center",
+      "description": "Beachfront Ayurvedic Wellness Center offering traditional massages and holistic wellness treatments in Nilaveli, Trincomalee.",
+      "url": "https://highparkhotel.com/wellness-center.php",
       "image": "https://highparkhotel.com/assets/images/spa-hero.jpg",
       "address": {
         "@type": "PostalAddress",
@@ -62,7 +62,7 @@
                         class="w-100 d-none d-md-block object-fit-cover slider-image"
                         alt="Spa Hero Desktop">
                     <div class="position-absolute bottom-0 start-0 w-100 text-white py-4 px-4" style="background: linear-gradient(to top, rgba(1, 17, 31, 0.8), transparent);">
-                        <h1 class="heading mb-0 text-white">Beachfront <span class="blue-text">Spa & Ayurveda</span></h1>
+                        <h1 class="heading mb-0 text-white">Beachfront <span class="blue-text">Wellness Center & Ayurveda</span></h1>
                         <p class="text-center mb-0 mt-2" style="font-size: 1.5rem; font-weight: 300;">Nilaveli Beach, Trincomalee</p>
                     </div>
                 </div>
@@ -71,13 +71,13 @@
             <!-- Introduction Section -->
             <section class="container px-4 section_container" style="padding-top: 80px;">
                 <h1 class="heading reveal">Experience <span class="blue-text">Beachfront Wellness</span> in Nilaveli</h1>
-                <p class="text-center w-75 mx-auto mt-4 mb-4 reveal">Nestled on the pristine shores of Nilaveli Beach in Trincomalee, High Park Hotel offers a unique beachfront spa experience. Indulge in our comprehensive range of traditional Ayurvedic treatments and therapeutic massages while listening to the gentle sounds of the Indian Ocean. Our expert therapists use natural oils and ancient techniques to rejuvenate your body, mind, and spirit. Each treatment is carefully designed to restore balance and promote holistic wellness in our serene beachfront setting.</p>
-                <p class="text-center w-75 mx-auto mb-5 reveal">Whether you're seeking relief from stress, muscle tension, or simply want to pamper yourself after a day at the beach, our Nilaveli spa provides the perfect sanctuary for complete relaxation and rejuvenation.</p>
+                <p class="text-center w-75 mx-auto mt-4 mb-4 reveal">Nestled on the pristine shores of Nilaveli Beach in Trincomalee, High Park Hotel offers a unique beachfront Wellness Center experience. Indulge in our comprehensive range of traditional Ayurvedic treatments and therapeutic massages while listening to the gentle sounds of the Indian Ocean. Our expert therapists use natural oils and ancient techniques to rejuvenate your body, mind, and spirit. Each treatment is carefully designed to restore balance and promote holistic wellness in our serene beachfront setting.</p>
+                <p class="text-center w-75 mx-auto mb-5 reveal">Whether you're seeking relief from stress, muscle tension, or simply want to pamper yourself after a day at the beach, our Nilaveli Wellness Center provides the perfect sanctuary for complete relaxation and rejuvenation.</p>
             </section>
 
-            <!-- Why Choose Our Spa Section -->
+            <!-- Why Choose Our Wellness Center Section -->
             <section class="container px-4 section_container">
-                <h2 class="sub-heading1 reveal">Why Choose Our <span class="blue-text">Nilaveli Beach Spa</span></h2>
+                <h2 class="sub-heading1 reveal">Why Choose Our <span class="blue-text">Nilaveli Beach Wellness Center</span></h2>
                 <div class="row g-4 g-lg-5 mt-4">
                     <div class="col-12 col-md-6 col-lg-4 reveal delay-1">
                         <div class="spa-feature-card">
@@ -112,7 +112,7 @@
             <!-- Price List Section -->
             <section class="container px-4 section_container">
                 <h1 class="heading reveal">Massage & Ayurveda Treatment <span class="blue-text">Price List</span></h1>
-                <p class="text-center w-75 mx-auto mt-3 mb-4 reveal">Our comprehensive spa menu features traditional Ayurvedic treatments and modern therapeutic massages. All prices are in Sri Lankan Rupees (LKR). Advance booking recommended, especially during peak season in Nilaveli.</p>
+                <p class="text-center w-75 mx-auto mt-3 mb-4 reveal">Our comprehensive Wellness Center menu features traditional Ayurvedic treatments and modern therapeutic massages. All prices are in Sri Lankan Rupees (LKR). Advance booking recommended, especially during peak season in Nilaveli.</p>
                 
                 <div class="row g-4 g-lg-5 mt-4">
                     <!-- Treatment Cards -->
@@ -288,7 +288,7 @@
                                 <img src="assets/images/offer.png" class="img-fluid">
                             </div>
                             <div class="col-12 col-md-8 p-0 d-flex align-items-center justify-content-center text-center text-md-start">
-                                <h1 class="display-5 fw-bold text-white m-0 ps-3">Book Your <br class="d-block d-md-none d-lg-block">Spa Experience Today</h1>
+                                <h1 class="display-5 fw-bold text-white m-0 ps-3">Book Your <br class="d-block d-md-none d-lg-block">Wellness Center Experience Today</h1>
                             </div>
                         </div>
                     </div>
@@ -302,14 +302,14 @@
             <section class="container px-4 section_container reveal">
                 <div class="row g-4 align-items-center">
                     <div class="col-12 col-md-6">
-                        <h2 class="sub-heading1 mb-4">Visit Our <span class="blue-text">Nilaveli Beach Spa</span></h2>
-                        <p class="mb-3">Located in the heart of Nilaveli, one of Sri Lanka's most beautiful beaches, our spa offers a tranquil escape from the everyday. The combination of traditional Ayurvedic wisdom and our stunning beachfront setting creates an unparalleled wellness experience.</p>
+                        <h2 class="sub-heading1 mb-4">Visit Our <span class="blue-text">Nilaveli Beach Wellness Center</span></h2>
+                        <p class="mb-3">Located in the heart of Nilaveli, one of Sri Lanka's most beautiful beaches, our Wellness Center offers a tranquil escape from the everyday. The combination of traditional Ayurvedic wisdom and our stunning beachfront setting creates an unparalleled wellness experience.</p>
                         <p class="mb-4"><strong>Location:</strong> High Park Hotel, Nilaveli-01, Trincomalee, Sri Lanka</p>
                         <p class="mb-0"><strong>Operating Hours:</strong> Daily 9:00 AM - 8:00 PM</p>
                     </div>
                     <div class="col-12 col-md-6">
                         <div class="spa-booking-card">
-                            <h3 class="mb-4">Book Your Spa Experience</h3>
+                            <h3 class="mb-4">Book Your Wellness Center Experience</h3>
                             <p class="mb-4">Reserve your preferred treatment time and let our therapists guide you on a journey of complete relaxation and rejuvenation.</p>
                             <a href="tel:+94777204519" class="btn-booking w-100 text-center d-block">Call to Book: +94 777 204 519</a>
                         </div>
@@ -319,7 +319,7 @@
 
             <!-- Final CTA Section -->
             <section class="container d-flex flex-column align-items-center reveal section_container">
-                <h1 class="extra-heading px-2 px-md-0 mb-4">Rejuvenate your body and mind with our healing spa therapies at Nilaveli Beach.</h1>
+                <h1 class="extra-heading px-2 px-md-0 mb-4">Rejuvenate your body and mind with our healing Wellness Center therapies at Nilaveli Beach.</h1>
                 <a href="tel:+94777204519" class="btn-booking">Book Your Treatment Now</a>
             </section>
 

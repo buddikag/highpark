@@ -17,11 +17,12 @@
 
     <!-- Navigation -->
     <nav class="nav" id="navMenu">
-      <ul class="container header-items">
+      <ul class="header-items">
         <li><a href="index.php">Home</a></li>
         <li><a href="rooms.php">Rooms</a></li>
-        <li><a href="spa.php">SPA</a></li>
+        <li><a href="wellness-center.php">Wellness Center</a></li>
         <li><a href="restaurant.php">Restaurant</a></li>
+        <li><a href="banquet.php">Banquet</a></li>
         <li><a href="facilities.php">Facilities</a></li>
         <li><a href="gallery.php">Gallery</a></li>
         <li><a href="reservation.php">Reservation</a></li>

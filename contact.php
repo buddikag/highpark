@@ -1,3 +1,75 @@
+<?php
+// Include email configuration and SMTP mailer
+require_once 'includes/email_config.php';
+require_once 'includes/smtp_mailer.php';
+
+$message = '';
+$messageType = '';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Get form data
+    $name = isset($_POST['name']) ? trim($_POST['name']) : '';
+    $email = isset($_POST['email']) ? trim($_POST['email']) : '';
+    $phone = isset($_POST['phone']) ? trim($_POST['phone']) : '';
+    $subject = isset($_POST['subject']) ? trim($_POST['subject']) : '';
+    $message_text = isset($_POST['message']) ? trim($_POST['message']) : '';
+    
+    // Validation
+    if (empty($name) || empty($email) || empty($subject) || empty($message_text)) {
+        $message = 'Please fill in all required fields.';
+        $messageType = 'error';
+    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $message = 'Please enter a valid email address.';
+        $messageType = 'error';
+    } else {
+        // Prepare email
+        $to = CONTACT_EMAIL;
+        $email_subject = 'Contact Form Inquiry - High Park Hotel';
+        
+        // Map subject values to readable text
+        $subject_map = [
+            'booking' => 'Room Booking',
+            'spa' => 'Wellness Center Services',
+            'restaurant' => 'Restaurant Inquiry',
+            'facilities' => 'Facilities & Amenities',
+            'general' => 'General Inquiry',
+            'other' => 'Other'
+        ];
+        $subject_display = isset($subject_map[$subject]) ? $subject_map[$subject] : ucfirst($subject);
+        
+        $email_body = "New Contact Form Inquiry\n\n";
+        $email_body .= "Contact Details:\n";
+        $email_body .= "Name: " . $name . "\n";
+        $email_body .= "Email: " . $email . "\n";
+        if (!empty($phone)) {
+            $email_body .= "Phone: " . $phone . "\n";
+        }
+        $email_body .= "Subject: " . $subject_display . "\n\n";
+        $email_body .= "Message:\n" . $message_text . "\n";
+        
+        // Initialize SMTP Mailer
+        $mailer = new SMTPMailer(
+            SMTP_HOST,
+            SMTP_PORT,
+            SMTP_USERNAME,
+            SMTP_PASSWORD,
+            SMTP_FROM_EMAIL,
+            SMTP_FROM_NAME
+        );
+        
+        // Send email via SMTP
+        if ($mailer->send($to, $email_subject, $email_body, $email)) {
+            $message = 'Thank you for your message! We will get back to you soon.';
+            $messageType = 'success';
+            // Clear form data
+            $name = $email = $phone = $subject = $message_text = '';
+        } else {
+            $message = 'Sorry, there was an error sending your message. Please try again or contact us directly at +94 777 204 519.';
+            $messageType = 'error';
+        }
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,6 +99,7 @@
 
             <!-- Hero Section -->
             <section class="container-fluid p-0 position-relative">
+                <img src="assets/images/logo.png" alt="Logo" class="hero-logo">
                 <div class="position-relative">
                     <img src="assets/images/hero-mobile-1.jpg"
                         class="w-100 d-block d-md-none object-fit-cover slider-image"
@@ -44,7 +117,7 @@
             <!-- Contact Information Section -->
             <section class="container px-4 section_container" style="padding-top: 80px;">
                 <h1 class="heading reveal">Get in <span class="blue-text">Touch</span></h1>
-                <p class="text-center w-75 mx-auto mt-4 mb-5 reveal">We're here to help you plan your perfect stay at High Park Hotel. Whether you have questions about our rooms, spa services, restaurant, or need assistance with your booking, our team is ready to assist you. Reach out to us through any of the following ways.</p>
+                        <p class="text-center w-75 mx-auto mt-4 mb-5 reveal">We're here to help you plan your perfect stay at High Park Hotel. Whether you have questions about our rooms, Wellness Center services, restaurant, or need assistance with your booking, our team is ready to assist you. Reach out to us through any of the following ways.</p>
                 
                 <div class="row g-4 g-lg-5 mt-4">
                     <div class="col-12 col-md-6 col-lg-4 reveal delay-1">
@@ -71,6 +144,17 @@
                     <div class="col-12 col-md-6 col-lg-4 reveal delay-3">
                         <div class="spa-feature-card text-center">
                             <div class="spa-feature-icon">
+                                <i class="bi bi-envelope-fill"></i>
+                            </div>
+                            <h3 class="spa-feature-title">Email Us</h3>
+                            <p class="spa-feature-text">
+                                <a href="mailto:info@highparkhotel.com" class="text-decoration-none">info@highparkhotel.com</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 reveal delay-4">
+                        <div class="spa-feature-card text-center">
+                            <div class="spa-feature-icon">
                                 <i class="bi bi-whatsapp"></i>
                             </div>
                             <h3 class="spa-feature-title">WhatsApp</h3>
@@ -91,34 +175,41 @@
                         <h2 class="sub-heading1 mb-4">Send Us a <span class="blue-text">Message</span></h2>
                         <p class="mb-4">Fill out the form below and we'll get back to you as soon as possible. For immediate assistance, please call us directly.</p>
                         
-                        <form id="contactForm" class="contact-form">
+                        <?php if ($message): ?>
+                            <div class="alert alert-<?php echo $messageType === 'success' ? 'success' : 'danger'; ?> alert-dismissible fade show" role="alert">
+                                <?php echo htmlspecialchars($message); ?>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        <?php endif; ?>
+                        
+                        <form method="POST" action="" id="contactForm" class="contact-form">
                             <div class="mb-3">
                                 <label for="name" class="form-label">Full Name <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" id="name" name="name" required>
+                                <input type="text" class="form-control" id="name" name="name" value="<?php echo isset($name) ? htmlspecialchars($name) : ''; ?>" required>
                             </div>
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email Address <span class="text-danger">*</span></label>
-                                <input type="email" class="form-control" id="email" name="email" required>
+                                <input type="email" class="form-control" id="email" name="email" value="<?php echo isset($email) ? htmlspecialchars($email) : ''; ?>" required>
                             </div>
                             <div class="mb-3">
                                 <label for="phone" class="form-label">Phone Number</label>
-                                <input type="tel" class="form-control" id="phone" name="phone">
+                                <input type="tel" class="form-control" id="phone" name="phone" value="<?php echo isset($phone) ? htmlspecialchars($phone) : ''; ?>">
                             </div>
                             <div class="mb-3">
                                 <label for="subject" class="form-label">Subject <span class="text-danger">*</span></label>
                                 <select class="form-control" id="subject" name="subject" required>
                                     <option value="">Select a subject</option>
-                                    <option value="booking">Room Booking</option>
-                                    <option value="spa">Spa Services</option>
-                                    <option value="restaurant">Restaurant Inquiry</option>
-                                    <option value="facilities">Facilities & Amenities</option>
-                                    <option value="general">General Inquiry</option>
-                                    <option value="other">Other</option>
+                                    <option value="booking" <?php echo (isset($subject) && $subject === 'booking') ? 'selected' : ''; ?>>Room Booking</option>
+                                    <option value="spa" <?php echo (isset($subject) && $subject === 'spa') ? 'selected' : ''; ?>>Wellness Center Services</option>
+                                    <option value="restaurant" <?php echo (isset($subject) && $subject === 'restaurant') ? 'selected' : ''; ?>>Restaurant Inquiry</option>
+                                    <option value="facilities" <?php echo (isset($subject) && $subject === 'facilities') ? 'selected' : ''; ?>>Facilities & Amenities</option>
+                                    <option value="general" <?php echo (isset($subject) && $subject === 'general') ? 'selected' : ''; ?>>General Inquiry</option>
+                                    <option value="other" <?php echo (isset($subject) && $subject === 'other') ? 'selected' : ''; ?>>Other</option>
                                 </select>
                             </div>
                             <div class="mb-3">
                                 <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
-                                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                                <textarea class="form-control" id="message" name="message" rows="5" required><?php echo isset($message_text) ? htmlspecialchars($message_text) : ''; ?></textarea>
                             </div>
                             <button type="submit" class="btn-booking w-100">Send Message</button>
                         </form>
@@ -167,7 +258,7 @@
                         <h2 class="sub-heading1 mb-4">Operating <span class="blue-text">Hours</span></h2>
                         <div class="spa-booking-card">
                             <p class="mb-2"><strong>Reception:</strong> 24/7</p>
-                            <p class="mb-2"><strong>Spa Services:</strong> Daily 9:00 AM - 8:00 PM</p>
+                            <p class="mb-2"><strong>Wellness Center Services:</strong> Daily 9:00 AM - 8:00 PM</p>
                             <p class="mb-2"><strong>Restaurant:</strong> Daily 7:00 AM - 10:00 PM</p>
                             <p class="mb-0"><strong>Check-in:</strong> 2:00 PM | <strong>Check-out:</strong> 11:00 AM</p>
                         </div>
@@ -215,24 +306,15 @@
     </div>
 
     <script>
-        // Contact form submission handler
-        document.getElementById('contactForm')?.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(this);
-            const data = Object.fromEntries(formData);
-            
-            // Here you would typically send the data to a server endpoint
-            // For now, we'll show an alert and log the data
-            console.log('Form submitted:', data);
-            
-            // You can replace this with actual form submission logic
-            alert('Thank you for your message! We will get back to you soon.\n\nFor immediate assistance, please call us at +94 777 204 519');
-            
-            // Reset form
-            this.reset();
+        // Scroll to form message if there's an alert
+        <?php if ($message): ?>
+        window.addEventListener('load', function() {
+            const alert = document.querySelector('.alert');
+            if (alert) {
+                alert.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
         });
+        <?php endif; ?>
     </script>
 
 </body>

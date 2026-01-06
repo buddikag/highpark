@@ -5,7 +5,7 @@
     <?php include 'includes/head.php'; ?>
 
     <title>Photo Gallery | High Park Hotel - Nilaveli Beach, Trincomalee</title>
-    <meta name="description" content="Explore High Park Hotel's photo gallery showcasing our beachfront location, rooms, spa, restaurant, and facilities in Nilaveli, Trincomalee.">
+    <meta name="description" content="Explore High Park Hotel's photo gallery showcasing our beachfront location, rooms, Wellness Center, restaurant, and facilities in Nilaveli, Trincomalee.">
     <meta name="keywords" content="High Park Hotel gallery, Nilaveli hotel photos, beachfront hotel images, Trincomalee hotel pictures">
     <link rel="canonical" href="https://highparkhotel.com/gallery.php">
     

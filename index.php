@@ -5,7 +5,7 @@
     <?php include 'includes/head.php'; ?>
 
     <title>Beachfront Hotel in Nilaveli, Trincomalee | High Park Hotel</title>
-    <meta name="description" content="Experience the ultimate beachfront escape at High Park Hotel in Nilaveli, Trincomalee. Direct beach access, ocean-view rooms, Ayurvedic spa, and authentic Sri Lankan hospitality on pristine Nilaveli Beach.">
+    <meta name="description" content="Experience the ultimate beachfront escape at High Park Hotel in Nilaveli, Trincomalee. Direct beach access, ocean-view rooms, Ayurvedic Wellness Center, and authentic Sri Lankan hospitality on pristine Nilaveli Beach.">
     <meta name="keywords" content="beachfront hotel Nilaveli, Nilaveli hotel, Trincomalee beach hotel, beachfront accommodation Nilaveli, High Park Hotel, Nilaveli Beach hotel, Sri Lanka beachfront hotel, ocean view hotel Nilaveli">
     <meta name="author" content="High Park Hotel">
     <link rel="canonical" href="https://highparkhotel.com/">
@@ -41,7 +41,7 @@
       "@type": "Hotel",
       "name": "High Park Hotel",
       "image": "https://highparkhotel.com/assets/images/hero-1.jpg",
-      "description": "Beachfront hotel in Nilaveli, Trincomalee with direct beach access, ocean-view rooms, Ayurvedic spa, and authentic Sri Lankan hospitality.",
+      "description": "Beachfront hotel in Nilaveli, Trincomalee with direct beach access, ocean-view rooms, Ayurvedic Wellness Center, and authentic Sri Lankan hospitality.",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Nilaveli-01",
@@ -69,7 +69,7 @@
         },
         {
           "@type": "LocationFeatureSpecification",
-          "name": "Spa",
+          "name": "Wellness Center",
           "value": true
         },
         {
@@ -168,11 +168,11 @@
                         <div class="carousel-item">
                             <img src="assets/images/hero-mobile-3.jpg"
                                 class="w-100 d-block d-md-none object-fit-cover slider-image"
-                                alt="Nilaveli Beach hotel spa - High Park Hotel beachfront spa mobile">
+                                alt="Nilaveli Beach hotel Wellness Center - High Park Hotel beachfront Wellness Center mobile">
 
                             <img src="assets/images/hero-3.jpg"
                                 class="w-100 d-none d-md-block object-fit-cover slider-image"
-                                alt="Beachfront spa Nilaveli - High Park Hotel Ayurvedic spa by the ocean">
+                                alt="Beachfront Wellness Center Nilaveli - High Park Hotel Ayurvedic Wellness Center by the ocean">
                         </div>
 
                         <!-- Slide 4 -->
@@ -219,7 +219,7 @@
             <!-- Why Stay Section -->
             <section class="container px-4 section_container">
                 <h1 class="heading reveal">Why Stay at <span class="blue-text">High Park Hotel Nilaveli</span></h1>
-                <p class="text-center w-75 mx-auto mt-4 mb-5 reveal">Located on the pristine shores of Nilaveli Beach in Trincomalee, High Park Hotel offers an authentic beachfront experience with direct access to one of Sri Lanka's most beautiful beaches. Wake up to stunning ocean views, enjoy traditional Ayurvedic spa treatments, and experience genuine Sri Lankan hospitality in our beachfront paradise.</p>
+                <p class="text-center w-75 mx-auto mt-4 mb-5 reveal">Located on the pristine shores of Nilaveli Beach in Trincomalee, High Park Hotel offers an authentic beachfront experience with direct access to one of Sri Lanka's most beautiful beaches. Wake up to stunning ocean views, enjoy traditional Ayurvedic Wellness Center treatments, and experience genuine Sri Lankan hospitality in our beachfront paradise.</p>
                 <div class="row g-4 g-lg-5">
                     <div class="col-12 col-md-6 col-lg-4 order-1 reveal delay-1">
                         <h2 class="sub-heading2 my-4">Direct Beach Access in Nilaveli</h2>
@@ -236,10 +236,10 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 order-3 order-md-2 order-lg-3 reveal delay-3">
-                        <h2 class="sub-heading2 my-4">Beachfront Spa Therapies</h2>
+                        <h2 class="sub-heading2 my-4">Beachfront Wellness Center</h2>
                         <div class="feature-card">
-                            <img src="assets/images/card-3.png" class="img-fluid w-100" alt="Beachfront spa Nilaveli - High Park Hotel Ayurvedic treatments">
-                            <p>Experience complete relaxation with our in-house beachfront Healing Spa Therapies at High Park Hotel in Nilaveli. Rejuvenate your body and mind with carefully curated traditional Ayurvedic treatments designed to restore balance, relieve stress, and enhance well-being, all while listening to the gentle sounds of the Indian Ocean.</p>
+                            <img src="assets/images/card-3.png" class="img-fluid w-100" alt="Beachfront Wellness Center Nilaveli - High Park Hotel Ayurvedic treatments">
+                            <p>Experience complete relaxation with our in-house beachfront Healing Wellness Center Therapies at High Park Hotel in Nilaveli. Rejuvenate your body and mind with carefully curated traditional Ayurvedic treatments designed to restore balance, relieve stress, and enhance well-being, all while listening to the gentle sounds of the Indian Ocean.</p>
                         </div>
                     </div>
                 </div>
@@ -314,8 +314,8 @@
             <!-- Booking Section -->
             <section class="container d-flex flex-column align-items-center reveal section_container">
                 <h1 class="extra-heading px-2 px-md-0 mb-4">Book Your Beachfront Escape in Nilaveli Today</h1>
-                <p class="text-center w-75 mx-auto mb-4">Experience the beauty of Nilaveli Beach with direct ocean access, traditional Ayurvedic spa treatments, and authentic Sri Lankan hospitality at High Park Hotel in Trincomalee.</p>
-                <a href="contact.php" class="btn-booking">Check Availability & Book Your Stay</a>
+                <p class="text-center w-75 mx-auto mb-4">Experience the beauty of Nilaveli Beach with direct ocean access, traditional Ayurvedic Wellness Center treatments, and authentic Sri Lankan hospitality at High Park Hotel in Trincomalee.</p>
+                <a href="reservation.php" class="btn-booking">Check Availability & Book Your Stay</a>
             </section>
 
         </main>

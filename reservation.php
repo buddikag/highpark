@@ -1,4 +1,8 @@
 <?php
+// Include email configuration and SMTP mailer
+require_once 'includes/email_config.php';
+require_once 'includes/smtp_mailer.php';
+
 $message = '';
 $messageType = '';
 
@@ -8,18 +12,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = isset($_POST['email']) ? trim($_POST['email']) : '';
     $phone = isset($_POST['phone']) ? trim($_POST['phone']) : '';
     $room_type = isset($_POST['room_type']) ? trim($_POST['room_type']) : '';
+    $number_of_rooms = isset($_POST['number_of_rooms']) ? trim($_POST['number_of_rooms']) : '';
+    $meal_plan = isset($_POST['meal_plan']) ? trim($_POST['meal_plan']) : '';
     $check_in = isset($_POST['check_in']) ? trim($_POST['check_in']) : '';
     $check_out = isset($_POST['check_out']) ? trim($_POST['check_out']) : '';
     $guests = isset($_POST['guests']) ? trim($_POST['guests']) : '';
     $special_requests = isset($_POST['special_requests']) ? trim($_POST['special_requests']) : '';
     
     // Validation
-    if (empty($name) || empty($email) || empty($phone) || empty($room_type) || empty($check_in) || empty($check_out) || empty($guests)) {
+    if (empty($name) || empty($email) || empty($phone) || empty($room_type) || empty($number_of_rooms) || empty($meal_plan) || empty($check_in) || empty($check_out) || empty($guests)) {
         $message = 'Please fill in all required fields.';
         $messageType = 'error';
     } else {
         // Prepare email
-        $to = 'buddikag@gmail.com';
+        $to = RESERVATION_EMAIL;
         $subject = 'Room Reservation Request - High Park Hotel';
         
         $email_body = "New Room Reservation Request\n\n";
@@ -29,6 +35,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $email_body .= "Phone: " . $phone . "\n\n";
         $email_body .= "Reservation Details:\n";
         $email_body .= "Room Type: " . $room_type . "\n";
+        $email_body .= "Number of Rooms: " . $number_of_rooms . "\n";
+        $email_body .= "Meal Plan: " . $meal_plan . "\n";
         $email_body .= "Check-in Date: " . $check_in . "\n";
         $email_body .= "Check-out Date: " . $check_out . "\n";
         $email_body .= "Number of Guests: " . $guests . "\n";
@@ -36,18 +44,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $email_body .= "Special Requests: " . $special_requests . "\n";
         }
         
-        $headers = "From: " . $email . "\r\n";
-        $headers .= "Reply-To: " . $email . "\r\n";
-        $headers .= "X-Mailer: PHP/" . phpversion();
+        // Initialize SMTP Mailer
+        $mailer = new SMTPMailer(
+            SMTP_HOST,
+            SMTP_PORT,
+            SMTP_USERNAME,
+            SMTP_PASSWORD,
+            SMTP_FROM_EMAIL,
+            SMTP_FROM_NAME
+        );
         
-        // Send email
-        if (mail($to, $subject, $email_body, $headers)) {
+        // Send email via SMTP
+        if ($mailer->send($to, $subject, $email_body, $email)) {
             $message = 'Thank you! Your reservation request has been sent successfully. We will contact you soon.';
             $messageType = 'success';
             // Clear form data
-            $name = $email = $phone = $room_type = $check_in = $check_out = $guests = $special_requests = '';
+            $name = $email = $phone = $room_type = $number_of_rooms = $meal_plan = $check_in = $check_out = $guests = $special_requests = '';
         } else {
-            $message = 'Sorry, there was an error sending your reservation request. Please try again or contact us directly.';
+            $message = 'Sorry, there was an error sending your reservation request. Please try again or contact us directly at +94 777 204 519.';
             $messageType = 'error';
         }
     }
@@ -166,6 +180,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                         <option value="Beach Rooms" <?php echo (isset($room_type) && $room_type === 'Beach Rooms') ? 'selected' : ''; ?>>Beach Rooms</option>
                                         <option value="Suite Rooms" <?php echo (isset($room_type) && $room_type === 'Suite Rooms') ? 'selected' : ''; ?>>Suite Rooms</option>
                                         <option value="Cabana" <?php echo (isset($room_type) && $room_type === 'Cabana') ? 'selected' : ''; ?>>Cabana</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="col-12 col-md-6">
+                                    <label for="number_of_rooms" class="form-label">Number of Rooms <span class="text-danger">*</span></label>
+                                    <input type="number" class="form-control" id="number_of_rooms" name="number_of_rooms" min="1" max="10" value="<?php echo isset($number_of_rooms) ? htmlspecialchars($number_of_rooms) : ''; ?>" required>
+                                </div>
+                                
+                                <div class="col-12 col-md-6">
+                                    <label for="meal_plan" class="form-label">Meal Plan <span class="text-danger">*</span></label>
+                                    <select class="form-select" id="meal_plan" name="meal_plan" required>
+                                        <option value="">Select Meal Plan</option>
+                                        <option value="Room Only" <?php echo (isset($meal_plan) && $meal_plan === 'Room Only') ? 'selected' : ''; ?>>Room Only</option>
+                                        <option value="Bed and Breakfast" <?php echo (isset($meal_plan) && $meal_plan === 'Bed and Breakfast') ? 'selected' : ''; ?>>Bed and Breakfast</option>
                                     </select>
                                 </div>
                                 
