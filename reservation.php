@@ -17,6 +17,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $check_in = isset($_POST['check_in']) ? trim($_POST['check_in']) : '';
     $check_out = isset($_POST['check_out']) ? trim($_POST['check_out']) : '';
     $guests = isset($_POST['guests']) ? trim($_POST['guests']) : '';
+    $whale_dolphin_watching = isset($_POST['whale_dolphin_watching']) ? 'Yes' : 'No';
+    $airport_transfer = isset($_POST['airport_transfer']) ? 'Yes' : 'No';
     $special_requests = isset($_POST['special_requests']) ? trim($_POST['special_requests']) : '';
     
     // Validation
@@ -40,6 +42,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $email_body .= "Check-in Date: " . $check_in . "\n";
         $email_body .= "Check-out Date: " . $check_out . "\n";
         $email_body .= "Number of Guests: " . $guests . "\n";
+        $email_body .= "Whale/Dolphin Watching: " . $whale_dolphin_watching . "\n";
+        $email_body .= "Airport Transfer: " . $airport_transfer . "\n";
         if (!empty($special_requests)) {
             $email_body .= "Special Requests: " . $special_requests . "\n";
         }
@@ -59,7 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $message = 'Thank you! Your reservation request has been sent successfully. We will contact you soon.';
             $messageType = 'success';
             // Clear form data
-            $name = $email = $phone = $room_type = $number_of_rooms = $meal_plan = $check_in = $check_out = $guests = $special_requests = '';
+            $name = $email = $phone = $room_type = $number_of_rooms = $meal_plan = $check_in = $check_out = $guests = $whale_dolphin_watching = $airport_transfer = $special_requests = '';
         } else {
             $message = 'Sorry, there was an error sending your reservation request. Please try again or contact us directly at +94 777 204 519.';
             $messageType = 'error';
@@ -118,10 +122,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <!-- Hero Section -->
             <section class="container-fluid p-0 position-relative">
                 <div class="position-relative">
-                    <img src="assets/images/hero-mobile-1.jpg"
+                    <img src="assets/images/hero-reservation.jpg"
                         class="w-100 d-block d-md-none object-fit-cover slider-image"
                         alt="Reservation Hero Mobile">
-                    <img src="assets/images/hero-1.jpg"
+                    <img src="assets/images/hero-reservation.jpg"
                         class="w-100 d-none d-md-block object-fit-cover slider-image"
                         alt="Reservation Hero Desktop">
                     <div class="position-absolute bottom-0 start-0 w-100 text-white py-4 px-4" style="background: linear-gradient(to top, rgba(1, 17, 31, 0.8), transparent);">
@@ -130,13 +134,35 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </div>
             </section>
 
+            <!-- Success Message Modal Overlay -->
+            <?php if ($message && $messageType === 'success'): ?>
+                <div id="successModal" class="position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center" style="z-index: 9999; background: rgba(0, 0, 0, 0.5);">
+                    <div class="bg-white rounded shadow-lg p-5 mx-3" style="max-width: 500px; width: 100%; animation: fadeIn 0.3s ease-in;">
+                        <div class="text-center">
+                            <div class="mb-4">
+                                <i class="bi bi-check-circle-fill text-success" style="font-size: 4rem;"></i>
+                            </div>
+                            <h2 class="mb-3 text-success">Success!</h2>
+                            <p class="mb-4" style="font-size: 1.1rem; color: #333;"><?php echo htmlspecialchars($message); ?></p>
+                            <button type="button" class="btn-booking" onclick="closeSuccessModal()">Close</button>
+                        </div>
+                    </div>
+                </div>
+                <style>
+                    @keyframes fadeIn {
+                        from { opacity: 0; transform: scale(0.9); }
+                        to { opacity: 1; transform: scale(1); }
+                    }
+                </style>
+            <?php endif; ?>
+
             <!-- Reservation Form Section -->
             <section class="container px-4 section_container" style="padding-top: 80px;">
                 <h1 class="heading reveal">Book Your <span class="blue-text">Stay</span></h1>
                 <p class="text-center w-75 mx-auto mt-4 mb-5 reveal">Fill out the form below to request a reservation. We will confirm your booking and contact you shortly.</p>
                 
-                <?php if ($message): ?>
-                    <div class="alert alert-<?php echo $messageType === 'success' ? 'success' : 'danger'; ?> alert-dismissible fade show w-75 mx-auto" role="alert">
+                <?php if ($message && $messageType === 'error'): ?>
+                    <div class="alert alert-danger alert-dismissible fade show w-75 mx-auto" role="alert">
                         <?php echo htmlspecialchars($message); ?>
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
@@ -212,6 +238,29 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     <input type="date" class="form-control" id="check_out" name="check_out" value="<?php echo isset($check_out) ? htmlspecialchars($check_out) : ''; ?>" required>
                                 </div>
                                 
+                                <!-- Additional Services -->
+                                <div class="col-12 mt-3">
+                                    <h3 class="mb-3">Additional Services</h3>
+                                </div>
+                                
+                                <div class="col-12 col-md-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="whale_dolphin_watching" name="whale_dolphin_watching" value="1" <?php echo (isset($_POST['whale_dolphin_watching'])) ? 'checked' : ''; ?>>
+                                        <label class="form-check-label" for="whale_dolphin_watching">
+                                            Whale/Dolphin Watching
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-12 col-md-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="airport_transfer" name="airport_transfer" value="1" <?php echo (isset($_POST['airport_transfer'])) ? 'checked' : ''; ?>>
+                                        <label class="form-check-label" for="airport_transfer">
+                                            Airport Transfer
+                                        </label>
+                                    </div>
+                                </div>
+                                
                                 <div class="col-12">
                                     <label for="special_requests" class="form-label">Special Requests</label>
                                     <textarea class="form-control" id="special_requests" name="special_requests" rows="4" placeholder="Any special requests or additional information..."><?php echo isset($special_requests) ? htmlspecialchars($special_requests) : ''; ?></textarea>
@@ -267,7 +316,39 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             const checkInDate = this.value;
             document.getElementById('check_out').setAttribute('min', checkInDate);
         });
+        
+        // Close success modal function
+        function closeSuccessModal() {
+            const modal = document.getElementById('successModal');
+            if (modal) {
+                modal.style.animation = 'fadeOut 0.3s ease-out';
+                setTimeout(function() {
+                    modal.remove();
+                }, 300);
+            }
+        }
+        
+        // Close modal when clicking outside
+        document.addEventListener('DOMContentLoaded', function() {
+            const modal = document.getElementById('successModal');
+            if (modal) {
+                modal.addEventListener('click', function(e) {
+                    if (e.target === modal) {
+                        closeSuccessModal();
+                    }
+                });
+                
+                // Scroll to top to show the modal
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        });
     </script>
+    <style>
+        @keyframes fadeOut {
+            from { opacity: 1; transform: scale(1); }
+            to { opacity: 0; transform: scale(0.9); }
+        }
+    </style>
 
 </body>
 

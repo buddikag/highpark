@@ -56,7 +56,7 @@
             <!-- Hero Section -->
             <section class="container-fluid p-0 position-relative">
                 <div class="position-relative">
-                    <img src="assets/images/restaurant-hero.jpg"
+                    <img src="assets/images/restaurant-hero-mobile.jpg"
                         class="w-100 d-block d-md-none object-fit-cover slider-image"
                         alt="Restaurant Hero Mobile">
                     <img src="assets/images/restaurant-hero.jpg"

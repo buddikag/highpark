@@ -34,10 +34,10 @@
             <!-- Hero Section -->
             <section class="container-fluid p-0 position-relative">
                 <div class="position-relative">
-                    <img src="assets/images/hero-mobile-1.jpg"
+                    <img src="assets/images/hindu-wedding.jpg"
                         class="w-100 d-block d-md-none object-fit-cover slider-image"
                         alt="Banquet Facility Mobile">
-                    <img src="assets/images/hero-1.jpg"
+                    <img src="assets/images/hindu-wedding.jpg"
                         class="w-100 d-none d-md-block object-fit-cover slider-image"
                         alt="Banquet Facility Desktop">
                     <div class="position-absolute bottom-0 start-0 w-100 text-white py-4 px-4" style="background: linear-gradient(to top, rgba(1, 17, 31, 0.8), transparent);">
@@ -274,4 +274,5 @@
 </body>
 
 </html>
+
 

@@ -236,6 +236,7 @@
                             <ul class="amenity-list">
                                 <li><i class="bi bi-check-circle-fill"></i> Cycling <span class="badge-text">(Off-site)</span></li>
                                 <li><i class="bi bi-check-circle-fill"></i> Fishing <span class="badge-text">(Additional charge, Off-site)</span></li>
+                                <li><i class="bi bi-check-circle-fill"></i> Night fishing <span class="badge-text">(Additional charge, Off-site)</span></li>
                             </ul>
                         </div>
                     </div>

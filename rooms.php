@@ -63,7 +63,7 @@
             <!-- Hero Section -->
             <section class="container-fluid p-0 position-relative">
                 <div class="position-relative">
-                    <img src="assets/images/room-hero.jpg"
+                    <img src="assets/images/room-hero-mobile.jpg"
                         class="w-100 d-block d-md-none object-fit-cover slider-image"
                         alt="High Park Hotel Rooms - Beachfront Accommodation Nilaveli Mobile View">
                     <img src="assets/images/room-hero.jpg"
@@ -301,8 +301,16 @@
             <!-- Booking Section -->
             <section class="container d-flex flex-column align-items-center reveal section_container">
                 <h1 class="extra-heading px-2 px-md-0 mb-4">Find your perfect room and start your beachfront adventure today.</h1>
-                <a href="" class="btn-booking">Check for Availability and Book</a>
+                <a href="reservation.php" class="btn-booking" style="font-size: 0.9rem; white-space: nowrap;">Check for Availability and Book</a>
             </section>
+            <style>
+                @media (max-width: 767.98px) {
+                    .btn-booking {
+                        font-size: 0.85rem !important;
+                        padding: 0.6rem 1.2rem !important;
+                    }
+                }
+            </style>
 
         </main>
 

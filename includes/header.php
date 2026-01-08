@@ -25,6 +25,7 @@
         <li><a href="banquet.php">Banquet</a></li>
         <li><a href="facilities.php">Facilities</a></li>
         <li><a href="gallery.php">Gallery</a></li>
+        <li><a href="reviews.php">Reviews</a></li>
         <li><a href="reservation.php">Reservation</a></li>
         <li><a href="contact.php">Contact</a></li>
       </ul>

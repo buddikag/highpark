@@ -1,4 +1,19 @@
 <section class="footer-main">
+    <style>
+        .footer-main h5 {
+            margin-bottom: 1.25rem !important;
+        }
+        .footer-main ul li {
+            margin-bottom: 1.25rem !important;
+        }
+        .footer-main ul li:last-child {
+            margin-bottom: 0 !important;
+        }
+        .footer-main p {
+            margin-bottom: 1.25rem !important;
+            line-height: 1.875rem;
+        }
+    </style>
     <div class="container ">
         <div class="footer-content px-4 px-md-0">
             <div>
